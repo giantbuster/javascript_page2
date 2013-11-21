@@ -1,0 +1,29 @@
+Jefferson Lam  
+11-20-13  
+JavaScript Assignment 2  
+
+Assignment:  
+-Create a javascript object called person with the following properties/methods  
+name - set this as 'Trey' or your own name  
+distance_travelled - set this initially as zero  
+say_name - should alert the object's name  
+say_something - have it accept a parameter. It should then say for example "Trey says 'I am cool'" if you pass 'I am cool' as an argument to this method.  
+walk - have it alert for example "Trey is walking" and increase distance_travelled by 3  
+run - have it alert for example "Trey is running" and increase distance_travelled by 10  
+crawl - have it alert for example "Trey is crawling" and increase distance_travelled by 1  
+
+-Make sure your codes work. For example if you run person.say_something('thank you'), it should say 'Trey says "thank you"'. If you do person.run(), it should alert 'Trey is running' and log the distances_travelled properly.  
+
+-Now you are going to create another property/method called doSomething(). Have this method return a random function back. Have doSomething() randomly pick one of the three functions (e.g. walk, run, crawl). For example if you do "var returned_function = person.doSomething(); returned_function();" it should execute one of the three methods. This practice is basically to illustrate that you can return a function from a function for the caller to execute.  
+
+-Add a new method called 'fly' to a person object.   
+This 'fly' method takes two functions as arguments.   
+Basically you're going to give 30% chance for the person to fly.   
+The first function passed is the function fly method should execute if the person is successfully able to fly (again 30% chance that this can happen).   
+The second function passed is the function fly method should execute if the person is NOT able to fly (70% chance this would happen).  
+For example say x = function() { alert('x'); } and y = function() { alert('y'); }.  
+You should be able to run person.fly(x, y) or similarly do person.fly( function() { alert('x'); } , function() { alert('y'); } );  
+
+-Read the following two articles to learn more about callbacks:  
+http://www.w3schools.com/jquery/jquery_callback.asp  
+http://www.impressivewebs.com/callback-functions-javascript/  
